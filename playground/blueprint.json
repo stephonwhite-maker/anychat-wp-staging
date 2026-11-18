@@ -7,7 +7,7 @@
 	"login": true,
 	"steps": [
 		{ "step": "installPlugin", "pluginData": { "resource": "url", "url": "https://raw.githubusercontent.com/stephonwhite-maker/anychat-wp-staging/main/playground/anychat-c74071f9e6.zip" }, "options": { "activate": true } },
-		{ "step": "unzip", "zipFile": { "resource": "url", "url": "https://raw.githubusercontent.com/stephonwhite-maker/anychat-wp-staging/main/playground/acwp-setup-b29f727b6b.zip" }, "extractToPath": "/acwp" },
+		{ "step": "unzip", "zipFile": { "resource": "url", "url": "https://raw.githubusercontent.com/stephonwhite-maker/anychat-wp-staging/main/playground/acwp-setup-145f4b91b1.zip" }, "extractToPath": "/acwp" },
 		{ "step": "runPHP", "code": "<?php require '/wordpress/wp-load.php'; require '/acwp/tools/setup.php'; require '/acwp/tools/demo.php';" }
 	]
 }
