@@ -1,0 +1,13 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"meta": { "title": "Anychat on WordPress (staging demo)", "author": "FORTHEWHEN" },
+	"landingPage": "/",
+	"preferredVersions": { "php": "8.3", "wp": "latest" },
+	"features": { "networking": true },
+	"login": true,
+	"steps": [
+		{ "step": "installPlugin", "pluginData": { "resource": "url", "url": "https://raw.githubusercontent.com/stephonwhite-maker/anychat-wp-staging/main/playground/anychat-c74071f9e6.zip" }, "options": { "activate": true } },
+		{ "step": "unzip", "zipFile": { "resource": "url", "url": "https://raw.githubusercontent.com/stephonwhite-maker/anychat-wp-staging/main/playground/acwp-setup-b29f727b6b.zip" }, "extractToPath": "/acwp" },
+		{ "step": "runPHP", "code": "<?php require '/wordpress/wp-load.php'; require '/acwp/tools/setup.php'; require '/acwp/tools/demo.php';" }
+	]
+}
